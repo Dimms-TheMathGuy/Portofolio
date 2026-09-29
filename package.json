@@ -1,0 +1,12 @@
+{
+  "name": "dimas-afradika-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "mathjax-full": "3.2.2"
+  }
+}
