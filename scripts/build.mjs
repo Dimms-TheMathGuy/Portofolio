@@ -42,13 +42,13 @@ let body = expandPairs(renderTex(src('index.html'))).replace(/<!--CAR-CTL-->/g, 
 const css = src('styles.css');
 const js = src('main.js');
 
-const HEAD = `<title>Dimas Afradika</title>
+const HEAD = `<title>Mohammad Dimas Afradika</title>
 <meta name="description" content="Mohammad Dimas Afradika: Computer Science and Mathematics at BINUS University. Machine learning, NLP, spatial data science and optimization.">
 <meta property="og:title" content="Mohammad Dimas Afradika">
 <meta property="og:description" content="Machine learning and spatial data science, with the math to back it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">`;
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Inter:wght@400;500;600;700&display=swap">`;
 
 const dist = join(root, 'dist');
 if (existsSync(dist)) rmSync(dist, { recursive: true });

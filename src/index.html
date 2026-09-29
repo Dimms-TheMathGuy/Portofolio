@@ -1,20 +1,16 @@
-<a class="skip" href="#projects">[[Skip to projects||Langsung ke proyek]]</a>
+<a class="skip" href="#about">Skip to content</a>
 
 <header class="nav" id="nav">
   <div class="nav-in">
-    <a class="mark" href="#top" aria-label="Mohammad Dimas Afradika, back to top"><span class="full">Mohammad Dimas Afradika</span><span class="short">Dimas Afradika</span><span class="dotc">.</span></a>
+    <a class="mark" href="#top" aria-label="Mohammad Dimas Afradika, back to top"><span class="full">Mohammad Dimas Afradika</span><span class="short">Dimas Afradika</span></a>
     <nav class="nav-links" aria-label="Sections">
-      <a href="#projects">[[Projects||Proyek]]</a>
-      <a href="#other">[[Other work||Karya lain]]</a>
-      <a href="#demo">[[Try it||Coba]]</a>
-      <a href="#about">[[About||Tentang]]</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#other">More work</a>
+      <a href="#now">Now</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="nav-tools">
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" id="lang-en" aria-pressed="true">EN</button>
-        <button type="button" id="lang-id" aria-pressed="false">ID</button>
-      </div>
-      <a class="btn sm nav-cta" href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn &#8599;</a>
       <button type="button" class="menu-btn" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
         <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5"/></svg>
       </button>
@@ -27,296 +23,510 @@
     <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5"/></svg>
   </button>
   <nav aria-label="Menu">
-    <a href="#projects">[[Projects||Proyek]]</a>
-    <a href="#other">[[Other work||Karya lain]]</a>
-    <a href="#demo">[[Try it||Coba]]</a>
-    <a href="#now">[[Now||Saat ini]]</a>
-    <a href="#about">[[About||Tentang]]</a>
-    <a href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#other">More work</a>
+    <a href="#demo">Try it</a>
+    <a href="#now">Now</a>
+    <a href="#contact">Contact</a>
   </nav>
 </div>
 
 <canvas class="bgfield" id="bgfield" aria-hidden="true"></canvas>
-<canvas class="traveller" id="traveller" aria-hidden="true"></canvas>
 
 <main>
 <!-- ============ HERO ============ -->
-<section class="hero paper2" id="top">
+<section class="hero" id="top">
   <div class="in hero-grid">
     <div class="hero-copy">
-      <p class="kicker"><i class="live-dot" aria-hidden="true"></i>[[Open to internships in AI/ML, data science, computer vision and GIS||Terbuka untuk magang di AI/ML, data science, computer vision, dan GIS]]</p>
-      <h1>[[Machine learning and spatial data science, <em>with the math to back it.</em>||Machine learning dan spatial data science, <em>didukung matematika yang kuat.</em>]]</h1>
-      <p class="lede">[[I'm Dimas, a Computer Science &amp; Mathematics student at BINUS University. I work on NLP, geospatial analytics and optimization, and on team projects I usually own the model and the statistics behind it.||Saya Dimas, mahasiswa Computer Science &amp; Mathematics di BINUS University. Saya fokus di NLP, analitik geospasial, dan optimasi. Di proyek tim, saya biasanya memegang model dan statistik di baliknya.]]</p>
+      <h1>Mohammad Dimas Afradika</h1>
+      <p class="tagline">Machine learning and spatial data science, <em>with the math to back it.</em></p>
+      <p class="lede">Computer Science and Mathematics double-degree student at BINUS University. I build NLP models, spatial scoring systems and optimization methods, and I care most about whether the numbers behind them hold up.</p>
       <div class="row-btns">
-        <a class="btn solid" href="#projects">[[See projects||Lihat proyek]]</a>
+        <a class="btn solid" href="#about">About me</a>
+        <a class="btn" href="#projects">See projects</a>
         <a class="btn" href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn &#8599;</a>
         <a class="btn" href="https://github.com/Dimms-TheMathGuy" target="_blank" rel="noopener">GitHub &#8599;</a>
       </div>
     </div>
     <figure class="slot hero-slot" id="slot-hero">
-      <canvas class="slot-canvas" data-surface aria-hidden="true"></canvas>
-      <figcaption>
-        <span class="fig">fig. 0</span>
-        <span class="cap">[[Simulated annealing searching a multimodal surface. It sometimes accepts an uphill step so it doesn't get stuck in the first valley.||Simulated annealing mencari titik terendah di permukaan multimodal. Sesekali ia menerima langkah naik supaya tidak terjebak di lembah pertama.]]</span>
-      </figcaption>
+      <canvas class="slot-canvas" data-surface data-live aria-hidden="true"></canvas>
+      <figcaption>Simulated annealing searching a multimodal surface. It sometimes accepts an uphill step so it doesn't get stuck in the first valley.</figcaption>
     </figure>
   </div>
   <div class="in">
     <dl class="proof">
-      <div><dt>Favorite Winner</dt><dd>[[MAPID WebGIS Competition 2026, as project lead.||MAPID WebGIS Competition 2026, sebagai project lead.]] <a href="#stasiun">StaSIUN &darr;</a></dd></div>
-      <div><dt>0.915 <small>F1</small></dt><dd>[[Entity recognition on financial headlines with fine-tuned BERT.||Pengenalan entitas pada headline keuangan dengan BERT yang di-fine-tune.]] <a href="#fnm">Financial News Miner &darr;</a></dd></div>
-      <div><dt>&minus;19.84%</dt><dd>[[Shorter delivery routes with simulated annealing.||Rute pengiriman lebih pendek dengan simulated annealing.]] <a href="#vrptw">[[Food rescue routing||Rute food rescue]] &darr;</a></dd></div>
+      <div><dt>Favorite Winner</dt><dd>MAPID WebGIS Competition 2026, as project lead. <a href="#stasiun">StaSIUN</a></dd></div>
+      <div><dt>0.915 <small>F1</small></dt><dd>Entity recognition on financial headlines with fine-tuned BERT. <a href="#fnm">Financial News Miner</a></dd></div>
+      <div><dt>&minus;19.84%</dt><dd>Shorter food-rescue routes with simulated annealing. <a href="#vrptw">Food rescue routing</a></dd></div>
     </dl>
   </div>
-  <h2 class="wordmark name" id="wm-hero"><span>Mohammad</span><span>Dimas</span><span>Afradika</span></h2>
 </section>
 
-<!-- ============ SKILLS ============ -->
-<section class="sec paper" id="skills">
-  <div class="in two">
-    <div class="two-l">
-      <p class="kicker">01 · [[What I bring||Keahlian]]</p>
-      <h2>[[What I can <em>help your team with.</em>||Yang bisa saya <em>bantu di tim Anda.</em>]]</h2>
-      <figure class="slot method-slot" id="slot-method">
-        <canvas class="slot-canvas" data-surface data-angle="1.2" aria-hidden="true"></canvas>
-        <figcaption><span class="fig">fig. 1</span><span class="cap">[[The same surface from another angle.||Permukaan yang sama dari sudut lain.]]</span></figcaption>
-      </figure>
+<!-- ============ ABOUT ============ -->
+<section class="sec" id="about">
+  <div class="in">
+    <div class="sec-h">
+      <p class="kicker">01 · Who I am</p>
+      <h2>About me</h2>
     </div>
-    <div class="rows">
-      <div class="r"><span class="r-k">ML &amp; NLP</span><span class="r-d">[[Fine-tuning BERT and FinBERT, named-entity recognition, aspect-level sentiment, topic models.||Fine-tuning BERT dan FinBERT, named-entity recognition, sentimen per aspek, topic modeling.]]</span><a class="r-v" href="#fnm">FNM</a></div>
-      <div class="r"><span class="r-k">LLM</span><span class="r-d">[[Two-layer extraction of structured data from messy field notes, and an assistant that answers by calling a scoring engine (tool calling).||Ekstraksi dua lapis data terstruktur dari catatan lapangan, dan asisten yang menjawab dengan memanggil mesin skor (tool calling).]]</span><a class="r-v" href="#stasiun">StaSIUN</a></div>
-      <div class="r"><span class="r-k">GIS</span><span class="r-d">[[PostGIS, street-network isochrones, spatial joins, OpenStreetMap, MapLibre.||PostGIS, isochrone berbasis jaringan jalan, spatial join, OpenStreetMap, MapLibre.]]</span><a class="r-v" href="#stasiun">StaSIUN</a></div>
-      <div class="r"><span class="r-k">[[Stats &amp; optimization||Statistik &amp; optimasi]]</span><span class="r-d">[[Bootstrap intervals, shrinkage, Entropy + AHP weighting, sensitivity analysis, simulated annealing.||Interval bootstrap, shrinkage, pembobotan Entropy + AHP, analisis sensitivitas, simulated annealing.]]</span><a class="r-v" href="#vrptw">VRPTW</a></div>
-      <div class="r"><span class="r-k">Computer vision</span><span class="r-d">[[Multi-view geometry: RANSAC, homography, bundle adjustment. My current project.||Geometri multi-view: RANSAC, homography, bundle adjustment. Proyek saya saat ini.]]</span><a class="r-v" href="#now">[[Now||Kini]]</a></div>
+    <div class="about">
+      <figure class="portrait"><img src="assets/dimas-1.webp" width="900" height="1200" alt="Mohammad Dimas Afradika" loading="lazy"><figcaption>Jakarta, Indonesia</figcaption></figure>
+      <div class="about-r">
+        <div class="prose">
+          <p>Hi, I'm Dimas. I study Computer Science and Mathematics in the double-degree program at BINUS University, and I'm looking for an internship in AI/ML, data science, computer vision or GIS.</p>
+          <p>Most of my work sits where a model meets a real decision: which station space a rail operator should sell first, which company a headline is actually bad news for, how a food-rescue fleet should route before the food spoils. On team projects I usually own the model and the statistics behind it, and I try to show how sure a number is, not just the number itself.</p>
+          <p>I prefer understanding a few methods deeply over using many I can't explain.</p>
+        </div>
+
+        <div class="edu">
+          <article class="edu-card">
+            <p class="edu-top"><span>Expected 2027</span><span>GPA 3.66 / 4.00</span></p>
+            <h3>S.Kom. · Computer Science</h3>
+            <p class="edu-school">BINUS University</p>
+            <p class="edu-list">Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Geo-Informatics, Big Data Infrastructure, Internet of Things, Algorithms &amp; Data Structures, Database Systems, Operating Systems, Computer Networks, Software Engineering</p>
+          </article>
+          <article class="edu-card">
+            <p class="edu-top"><span>Expected 2027</span><span>GPA 3.66 / 4.00</span></p>
+            <h3>S.Mat. · Mathematics</h3>
+            <p class="edu-school">BINUS University</p>
+            <p class="edu-list">Differential Equations, Numerical Analysis, Real Analysis, Mathematical Statistics, Linear &amp; Modern Algebra, Operations Research &amp; Mathematical Modelling, Computational Geometry, Applied Projective Geometry</p>
+          </article>
+        </div>
+
+        <div class="skills">
+          <div class="sk"><h3>Programming</h3><ul class="chips"><li>Python</li><li>SQL</li><li>C++</li><li>Dart</li><li>TypeScript</li><li>PHP</li></ul></div>
+          <div class="sk"><h3>ML &amp; NLP</h3><ul class="chips"><li>PyTorch</li><li>Hugging Face</li><li>scikit-learn</li><li>BERT / FinBERT</li><li>NER</li><li>Aspect-based sentiment</li><li>Topic modeling</li><li>LLM tool calling</li></ul></div>
+          <div class="sk"><h3>GIS</h3><ul class="chips"><li>PostGIS</li><li>Network isochrones</li><li>OpenStreetMap</li><li>MapLibre GL</li><li>Leaflet</li></ul></div>
+          <div class="sk"><h3>Math &amp; statistics</h3><ul class="chips"><li>Bootstrap intervals</li><li>Shrinkage</li><li>Entropy + AHP</li><li>Metaheuristics</li><li>Integer programming</li><li>Differential equations</li></ul></div>
+          <div class="sk"><h3>Engineering</h3><ul class="chips"><li>FastAPI</li><li>Docker</li><li>pandas</li><li>Flutter</li><li>Git</li></ul></div>
+        </div>
+
+        <dl class="facts-list">
+          <div><dt>Recognition</dt><dd>Favorite Winner, MAPID WebGIS Competition 2026 · Semifinalist, Gemastik XVIII 2025 (Smart City) · Best Project in class, 2025</dd></div>
+          <div><dt>Papers</dt><dd>Food-rescue routing with simulated annealing · quarter-car suspension model · IoT flood irrigation</dd></div>
+          <div><dt>Beyond projects</dt><dd>Mentor and tutor for other students on campus, and active in student organizations. Details are on my <a href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn&nbsp;&#8599;</a></dd></div>
+        </dl>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROJECTS (AI / data / GIS) ============ -->
-<section class="sec paper" id="projects">
+<!-- ============ FEATURED WORK ============ -->
+<section class="sec tint" id="projects">
   <div class="in">
     <div class="sec-h">
-      <p class="kicker">02 · [[AI, data &amp; GIS projects||Proyek AI, data &amp; GIS]]</p>
-      <h2>[[Three projects, <em>each with a result you can check.</em>||Tiga proyek, <em>dengan hasil yang bisa dicek.</em>]]</h2>
+      <p class="kicker">02 · Featured work</p>
+      <h2>Case studies</h2>
+      <p class="lede">Each case study follows one real decision, from the problem through the approach and results to what should happen next. Three are AI, data and GIS projects; the fourth is a product that is already running.</p>
     </div>
 
-    <!-- StaSIUN -->
-    <article class="proj" id="stasiun">
-      <div class="car" data-car aria-roledescription="carousel" aria-label="StaSIUN">
-        <div class="car-track" tabindex="0">
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-award.webp" width="1098" height="1372" alt="Team StaSIUN on stage receiving the Favorite Winner award at MAPID Catalyst 2026" loading="lazy"></button><figcaption>[[On stage at MAPID Catalyst 2026, Favorite Winner||Di panggung MAPID Catalyst 2026, Favorite Winner]]</figcaption></figure>
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-sepi.webp" width="1600" height="900" alt="SEPI score on each station across the KRL network" loading="lazy"></button><figcaption>[[SEPI score on every KRL station||Skor SEPI di setiap stasiun KRL]]</figcaption></figure>
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-isochrone.webp" width="1599" height="1600" alt="Circle buffer versus walking isochrone at Sudirman" loading="lazy"></button><figcaption>[[Sudirman: circle 2.18 km² vs walkable area 0.92 km²||Sudirman: lingkaran 2,18 km² vs area terjangkau 0,92 km²]]</figcaption></figure>
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-area.webp" width="1600" height="900" alt="Walking catchment and places around Sudirman" loading="lazy"></button><figcaption>[[Walking catchment and the places inside it||Area jangkauan jalan kaki dan tempat di dalamnya]]</figcaption></figure>
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-rank.webp" width="1600" height="900" alt="Station ranking with confidence bounds" loading="lazy"></button><figcaption>[[Ranking with confidence bounds||Peringkat dengan batas keyakinan]]</figcaption></figure>
-          <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-ai.webp" width="1600" height="900" alt="AI assistant explaining a station score" loading="lazy"></button><figcaption>[[Assistant that explains a score by calling the scoring engine||Asisten yang menjelaskan skor dengan memanggil mesin skor]]</figcaption></figure>
+    <!-- ===== 01 StaSIUN ===== -->
+    <article class="case" id="stasiun">
+      <header class="case-h">
+        <p class="case-no">01</p>
+        <div class="case-t">
+          <p class="meta">Team of 5 · Project lead · GIS &amp; spatial data science · Jul–Sep 2026</p>
+          <h3>StaSIUN: valuing ad space, tenants and naming rights across 45 Jakarta KRL stations</h3>
+          <p class="tags"><span class="tag win">Favorite Winner · MAPID WebGIS Competition 2026</span></p>
         </div>
-        <!--CAR-CTL-->
-      </div>
-      <div class="proj-info">
-        <p class="tags"><span class="tag win">Favorite Winner · MAPID WebGIS 2026</span><span class="tag">Project lead</span><span class="tag">Ad space · non-farebox revenue</span></p>
-        <h3>StaSIUN</h3>
-        <p class="one">[[A WebGIS that maps where ad space at 45 Jakarta KRL stations is worth the most, along with tenant and naming-rights potential.||WebGIS yang memetakan stasiun mana yang adspace-nya paling bernilai di 45 stasiun KRL Jakarta, beserta potensi tenant dan naming rights.]]</p>
-        <p class="role"><b>[[Problem||Masalah]]</b> [[Non-farebox revenue is only about 4% of KAI's income. StaSIUN shows which stations' commercial space (ad space, tenants, naming rights) to optimize first to raise it.||Pendapatan non-farebox KAI hanya sekitar 4%. StaSIUN menunjukkan ruang komersial stasiun mana (adspace, tenant, naming rights) yang paling layak dioptimalkan lebih dulu untuk menaikkannya.]]</p>
-        <p class="role"><b>[[My part||Peran saya]]</b> [[Led a team of 5; owned the scoring model, its statistics and its robustness checks.||Memimpin tim 5 orang; memegang model skor, statistik, dan uji ketahanannya.]]</p>
-        <dl class="kpis">
-          <div><dt>45</dt><dd>[[stations scored||stasiun dinilai]]</dd></div>
-          <div><dt>1,034</dt><dd>[[field notes extracted||catatan lapangan diekstraksi]]</dd></div>
-          <div><dt>46%</dt><dd>[[of a circle buffer is walkable||buffer lingkaran yang terjangkau]]</dd></div>
-        </dl>
-        <details class="more">
-          <summary>[[How it works||Cara kerjanya]]</summary>
-          <div class="more-in">
-            <div class="more-eq"><span class="tex" data-tex="\mathrm{SEPI}_s=\sum_{j=1}^{5} w_j\,\tilde{x}_{sj}" data-display></span></div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text">
+          <section class="blk">
+            <h4>The problem</h4>
+            <p>Non-farebox revenue is only about 4% of KAI's total income, while MRT Jakarta, with far fewer passengers, reaches 30–40%. The gap isn't because the stations are weak assets: the value of their commercial space (ad space, tenant spots and naming rights) has simply never been measured spatially. Ad space shows it most clearly. Nobody can say who actually walks through a given station (its footfall persona) or how crowded it gets across time windows, so an ad spot can't be priced by what it really delivers. Small businesses around a station are just as blind: they can't see latent demand or how crowded the competition is.</p>
+          </section>
+          <section class="blk">
+            <h4>The approach</h4>
             <ul class="ticks">
-              <li>[[Five indicators (transport, economy, access, urban, commercial), weighted with Entropy + AHP (CR = 0.0072).||Lima indikator (transportasi, ekonomi, akses, urban, komersial), dibobot dengan Entropy + AHP (CR = 0,0072).]]</li>
-              <li>[[Walking isochrones on the street network instead of circle buffers.||Isochrone jalan kaki di jaringan jalan, bukan buffer lingkaran.]]</li>
-              <li>[[Bootstrap BCa intervals and shrinkage toward LDA archetypes where data is thin; stations ranked by the lower bound; ranking tested across 5 weighting schemes and 1,000 weight perturbations.||Interval bootstrap BCa dan shrinkage ke arketipe LDA saat data tipis; stasiun diurutkan dengan batas bawah; peringkat diuji dengan 5 skema bobot dan 1.000 perturbasi bobot.]]</li>
-              <li>[[Two-layer extraction of ads, tenants and facility conditions from field notes, capped at 15% of any score and cross-checked spatially.||Ekstraksi dua lapis untuk iklan, tenant, dan kondisi fasilitas dari catatan lapangan, dibatasi maksimal 15% dari skor dan divalidasi silang secara spasial.]]</li>
+              <li><b>Walking isochrones on the street network</b> instead of circle buffers, because pedestrians can't walk through rail lines, rivers or arterial roads.</li>
+              <li><b>SEPI</b>, a composite score over five variables (transport, economy, access, urban form, commercial), weighted with Entropy + AHP (consistency ratio 0.0072).</li>
+              <li><b>Uncertainty made explicit:</b> bootstrap BCa intervals, and shrinkage toward stations of the same LDA archetype where survey data is thin. Every score carries its sample size and a confidence flag.</li>
+              <li><b>Ranking robustness</b> tested across 5 weighting schemes and 1,000 weight perturbations.</li>
+              <li><b>Two-layer extraction</b> of ads, tenants and facility complaints from 1,034 field-survey notes, capped at 15% of any score and cross-checked spatially.</li>
+              <li><b>An assistant</b> that answers questions by calling the scoring engine itself (tool calling), so every answer traces back to a computed number.</li>
             </ul>
+            <div class="eq-box"><span class="tex" data-tex="\mathrm{SEPI}_s=\sum_{j=1}^{5} w_j\,\tilde{x}_{sj}" data-display></span></div>
+          </section>
+          <section class="blk">
+            <h4>The result</h4>
+            <p>All 45 stations are scored and classed: 2 Premium Transit Hubs, 32 Moderate and 11 Low, led by Tanah Abang (76.5) and Sudirman (76.1). The isochrones changed the picture: at Sudirman the area actually reachable in a 10-minute walk is 0.92 km², against 2.18 km² for the circle a buffer would assume. Verified facility complaints were turned into 19 sponsorship opportunities at 10 stations. The team won Favorite Winner.</p>
+          </section>
+          <section class="blk">
+            <h4>What's next</h4>
+            <p>The ranking is stable across weightings, but the transport indicator is still thin: ridership data covers only 10 stations. The next step is full ridership and real ad-rate benchmarks, so the index can move from a ranking to a price.</p>
+          </section>
+        </div>
+
+        <aside class="case-side">
+          <div class="car" data-car aria-roledescription="carousel" aria-label="StaSIUN">
+            <div class="car-track" tabindex="0">
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-award.webp" width="1098" height="1372" alt="Team StaSIUN on stage receiving the Favorite Winner award at MAPID Catalyst 2026" loading="lazy"></button><figcaption>On stage at MAPID Catalyst 2026, Favorite Winner</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-sepi.webp" width="1600" height="900" alt="SEPI score on each station across the KRL network" loading="lazy"></button><figcaption>SEPI score on every KRL station</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-isochrone.webp" width="1599" height="1600" alt="Circle buffer versus walking isochrone at Sudirman" loading="lazy"></button><figcaption>Sudirman: circle 2.18 km² vs walkable area 0.92 km²</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-sponsor.webp" width="1600" height="900" alt="Naming-rights tab with nearby sponsor candidates" loading="lazy"></button><figcaption>Naming rights: sponsor candidates from brands within walking reach</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-rank.webp" width="1600" height="900" alt="Station ranking with confidence bounds" loading="lazy"></button><figcaption>Ranking with confidence bounds</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/stasiun-ai.webp" width="1600" height="900" alt="Assistant explaining a station score" loading="lazy"></button><figcaption>The assistant explains a score by calling the scoring engine</figcaption></figure>
+            </div>
+            <!--CAR-CTL-->
           </div>
-        </details>
-        <p class="stack">Python · FastAPI · PostGIS · LDA · LLM · OpenStreetMap · MapLibre GL</p>
-        <div class="row-btns"><a class="btn solid sm" href="http://sta-siun.mapid.io/" target="_blank" rel="noopener">[[Live app||Aplikasi live]] &#8599;</a></div>
+          <dl class="kpis">
+            <div><dt>45</dt><dd>stations scored, each with a confidence interval</dd></div>
+            <div><dt>0.92 <small>vs</small> 2.18&nbsp;km²</dt><dd>walkable area vs circle buffer at Sudirman</dd></div>
+            <div><dt>1,034</dt><dd>field-survey notes turned into structured signals</dd></div>
+          </dl>
+        </aside>
       </div>
+
+      <section class="did">
+        <h4>What I did</h4>
+        <ol class="steps">
+          <li><b>Problem framing</b><span>Framed the non-farebox gap as a measurement problem and set the scope, including what stays out: no personal passenger data.</span></li>
+          <li><b>Spatial method</b><span>Chose network isochrones over buffers and defined the permeability ratio between the two.</span></li>
+          <li><b>Index design</b><span>Built SEPI and its Entropy + AHP weighting, and kept TOPSIS only as a comparison because it is prone to rank reversal.</span></li>
+          <li><b>Uncertainty &amp; robustness</b><span>Added BCa intervals, shrinkage by archetype and the weight-perturbation test.</span></li>
+          <li><b>Guardrails on text signals</b><span>Designed the two-layer extraction so it works on any survey entry, and capped its influence at 15%.</span></li>
+          <li><b>Leading the team</b><span>Split the work across five people, reviewed the methodology and presented it to the judges.</span></li>
+        </ol>
+      </section>
+
+      <footer class="case-foot">
+        <ul class="chips sm"><li>Python</li><li>FastAPI</li><li>PostgreSQL + PostGIS</li><li>LDA</li><li>LLM</li><li>OpenStreetMap</li><li>MapLibre GL</li></ul>
+        <a class="btn solid sm" href="http://sta-siun.mapid.io/" target="_blank" rel="noopener">Open the live app &#8599;</a>
+      </footer>
     </article>
 
-    <!-- FNM -->
-    <article class="proj" id="fnm">
-      <div class="car" data-car aria-roledescription="carousel" aria-label="Financial News Miner">
-        <div class="car-track" tabindex="0">
-          <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-nb-demo.webp" width="1600" height="1042" alt="Notebook: the NER + ABSA pipeline run on real headlines" loading="lazy"></button><figcaption>[[Pipeline output: Microchip positive, Apple negative, in one headline||Output pipeline: Microchip positif, Apple negatif, dalam satu headline]]</figcaption></figure>
-          <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-nb-pipeline.webp" width="1600" height="1097" alt="Notebook: ABSAPipeline class" loading="lazy"></button><figcaption>[[The pipeline: BERT tags entities, FinBERT scores each one||Pipeline-nya: BERT menandai entitas, FinBERT menilai tiap entitas]]</figcaption></figure>
-          <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-acc-type.webp" width="790" height="590" alt="Accuracy by headline type for SVM, FinBERT and BERT" loading="lazy"></button><figcaption>[[Accuracy by headline type; conflicting headlines 0.616 → 0.857||Akurasi per tipe headline; headline konflik 0,616 → 0,857]]</figcaption></figure>
+    <!-- ===== 02 FNM ===== -->
+    <article class="case" id="fnm">
+      <header class="case-h">
+        <p class="case-no">02</p>
+        <div class="case-t">
+          <p class="meta">Group project · Text Mining course · NLP · Jun 2026</p>
+          <h3>Financial News Miner: sentiment toward each company in a headline</h3>
         </div>
-        <!--CAR-CTL-->
+      </header>
+
+      <div class="case-body">
+        <div class="case-text">
+          <section class="blk">
+            <h4>The problem</h4>
+            <p>Headline-level sentiment misses the point. "Gold shines on seasonal demand; Silver dull" is good news for gold and bad news for silver. In the SEntFiN dataset, 2,850 of 10,753 headlines mention more than one entity and 1,235 of them carry conflicting sentiment. A model that scores the whole headline fails exactly where the signal matters.</p>
+          </section>
+          <section class="blk">
+            <h4>The approach</h4>
+            <ul class="ticks">
+              <li><b>Data:</b> parsed the annotated SEntFiN 1.1 into 14,409 headline–entity pairs and checked that every entity appears verbatim, so NER tags could be generated by span matching.</li>
+              <li><b>Entity recognition:</b> fine-tuned BERT (cased), scored at entity level with seqeval, where a multi-word entity only counts if the whole span is right.</li>
+              <li><b>Sentiment per entity:</b> the model reads the headline and the entity together, as <code>[CLS] headline [SEP] entity [SEP]</code>. Compared FinBERT with class weights against plain BERT.</li>
+              <li><b>Honest baselines:</b> CRF with hand-crafted features for NER and TF-IDF + linear SVM for sentiment. No LLM-generated labels, since the lecturer ruled them out as circular.</li>
+            </ul>
+          </section>
+          <section class="blk">
+            <h4>The result</h4>
+            <p>Entity F1 rose from 0.837 to 0.915 and sentiment macro-F1 from 0.767 to 0.878. The real test is conflicting headlines: accuracy there went from 0.616 to 0.857, shrinking the gap between single-entity and conflicting headlines from 0.206 to 0.035. The model reads the entity, not the mood of the headline.</p>
+          </section>
+          <section class="blk">
+            <h4>The trade-off</h4>
+            <p>The transformer has about 110M parameters against 81K for the SVM, and takes 3.96 ms per pair on GPU versus 0.48 ms on CPU. For a machine without a GPU the SVM is still a sensible fallback; for mixed headlines, FinBERT is worth the cost.</p>
+          </section>
+        </div>
+
+        <aside class="case-side">
+          <div class="car" data-car aria-roledescription="carousel" aria-label="Financial News Miner">
+            <div class="car-track" tabindex="0">
+              <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-nb-demo.webp" width="1600" height="1042" alt="Notebook: the pipeline run on real headlines" loading="lazy"></button><figcaption>Pipeline output: Microchip positive, Apple negative, in one headline</figcaption></figure>
+              <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-acc-type.webp" width="790" height="590" alt="Accuracy by headline type for SVM, FinBERT and BERT" loading="lazy"></button><figcaption>Accuracy by headline type; conflicting headlines 0.616 → 0.857</figcaption></figure>
+              <figure class="slide light"><button class="zoom" type="button"><img src="assets/fnm-nb-pipeline.webp" width="1600" height="1097" alt="Notebook: the pipeline class" loading="lazy"></button><figcaption>The pipeline: BERT tags entities, then each one gets its own sentiment</figcaption></figure>
+            </div>
+            <!--CAR-CTL-->
+          </div>
+          <dl class="kpis">
+            <div><dt>0.915</dt><dd>entity F1 (CRF baseline 0.837)</dd></div>
+            <div><dt>0.878</dt><dd>sentiment macro-F1 (SVM baseline 0.767)</dd></div>
+            <div><dt>0.857</dt><dd>accuracy on conflicting headlines (was 0.616)</dd></div>
+          </dl>
+        </aside>
       </div>
-      <div class="proj-info">
-        <p class="tags"><span class="tag">NLP</span><span class="tag">[[Text Mining course · group||Mata kuliah Text Mining · kelompok]]</span></p>
-        <h3>Financial News Miner</h3>
-        <p class="one">[[Finds every company in a financial headline and reads the sentiment toward each one, because one headline can be good news for one firm and bad for another.||Menemukan setiap perusahaan di headline keuangan dan membaca sentimen terhadap masing-masing, karena satu headline bisa jadi kabar baik untuk satu perusahaan dan buruk untuk yang lain.]]</p>
-        <p class="role"><b>[[Approach||Pendekatan]]</b> [[NER with BERT, then entity-level sentiment with FinBERT; compared against CRF and TF-IDF + SVM baselines on 10,753 annotated headlines.||NER dengan BERT, lalu sentimen per entitas dengan FinBERT; dibandingkan dengan baseline CRF dan TF-IDF + SVM pada 10.753 headline beranotasi.]]</p>
-        <dl class="kpis">
-          <div><dt>0.915</dt><dd>[[NER F1 (was 0.837)||F1 NER (sebelumnya 0,837)]]</dd></div>
-          <div><dt>0.878</dt><dd>[[sentiment macro-F1 (was 0.767)||macro-F1 sentimen (sebelumnya 0,767)]]</dd></div>
-          <div><dt>0.857</dt><dd>[[accuracy on conflicting headlines (was 0.616)||akurasi headline konflik (sebelumnya 0,616)]]</dd></div>
-        </dl>
-        <p class="stack">PyTorch · Hugging Face Transformers · BERT · FinBERT · scikit-learn · CRF</p>
-        <div class="row-btns"><a class="btn sm" href="https://github.com/Dimms-TheMathGuy/Financial-News-Miner" target="_blank" rel="noopener">GitHub &#8599;</a></div>
-      </div>
+
+      <section class="did">
+        <h4>What we did</h4>
+        <ol class="steps">
+          <li><b>Exploration &amp; parsing</b><span>Verified the dataset's claims ourselves: counts, class balance, conflicting cases.</span></li>
+          <li><b>Preprocessing</b><span>Built BIO tags for NER and headline–entity pairs for sentiment.</span></li>
+          <li><b>Baselines</b><span>CRF and TF-IDF + SVM, to know what the transformers had to beat.</span></li>
+          <li><b>Fine-tuning</b><span>BERT for NER, FinBERT and BERT for entity sentiment.</span></li>
+          <li><b>Result analysis</b><span>Accuracy by headline type, confidence calibration, model size and speed.</span></li>
+          <li><b>End-to-end pipeline</b><span>One class that takes a raw headline and returns each entity with its sentiment.</span></li>
+        </ol>
+      </section>
+
+      <footer class="case-foot">
+        <ul class="chips sm"><li>PyTorch</li><li>Hugging Face Transformers</li><li>BERT</li><li>FinBERT</li><li>scikit-learn</li><li>CRF</li><li>seqeval</li></ul>
+        <a class="btn sm" href="https://github.com/Dimms-TheMathGuy/Financial-News-Miner" target="_blank" rel="noopener">View repository &#8599;</a>
+      </footer>
     </article>
 
-    <!-- VRPTW -->
-    <article class="proj" id="vrptw">
-      <div class="car" data-car aria-roledescription="carousel" aria-label="Food rescue routing">
-        <div class="car-track" tabindex="0">
-          <figure class="slide light"><button class="zoom" type="button"><img src="assets/vrptw-sa.webp" width="1484" height="1327" alt="Simulated annealing routes, 21 vehicles" loading="lazy"></button><figcaption>[[After: simulated annealing, 21 vehicles, 1698.57||Sesudah: simulated annealing, 21 kendaraan, 1698,57]]</figcaption></figure>
-          <figure class="slide light"><button class="zoom" type="button"><img src="assets/vrptw-init.webp" width="1484" height="1327" alt="Initial nearest-neighbor routes, 27 vehicles" loading="lazy"></button><figcaption>[[Before: nearest neighbor, 27 vehicles, 2119.00||Sebelum: nearest neighbor, 27 kendaraan, 2119,00]]</figcaption></figure>
+    <!-- ===== 03 VRPTW ===== -->
+    <article class="case" id="vrptw">
+      <header class="case-h">
+        <p class="case-no">03</p>
+        <div class="case-t">
+          <p class="meta">Paper with Kevin Tan · Operations research · Jun 2026</p>
+          <h3>Food rescue routing: vehicle routing with time windows, solved by simulated annealing</h3>
         </div>
-        <!--CAR-CTL-->
+      </header>
+
+      <div class="case-body">
+        <div class="case-text">
+          <section class="blk">
+            <h4>The problem</h4>
+            <p>Food rescue programs collect surplus food from restaurants, hotels and supermarkets and bring it to people who need it. The food spoils, so every stop has a time window, and every vehicle has a capacity. That makes it a Vehicle Routing Problem with Time Windows (VRPTW), which is NP-hard: exact solvers only work for small instances.</p>
+          </section>
+          <section class="blk">
+            <h4>The approach</h4>
+            <ul class="ticks">
+              <li><b>Model:</b> minimize total distance, with each customer visited once, capacity Q = 200 and arrival inside [e<sub>i</sub>, l<sub>i</sub>].</li>
+              <li><b>Starting point:</b> a nearest-neighbor route that already respects capacity and time windows.</li>
+              <li><b>Three moves:</b> 2-opt inside a route, relocating a customer to another route, and swapping customers between routes. Every candidate is checked for feasibility before it is scored.</li>
+              <li><b>Cooling:</b> geometric, from T<sub>0</sub> = 1000 to 0.1 with α = 0.9995, up to 50,000 iterations, on the Solomon C101 benchmark (100 customers).</li>
+            </ul>
+            <div class="eq-box"><span class="tex" data-tex="P(\text{accept})=\begin{cases}1, &amp; \Delta\le 0\\ e^{-\Delta/T_k}, &amp; \Delta&gt;0\end{cases}\qquad T_{k+1}=\alpha\,T_k" data-display></span></div>
+          </section>
+          <section class="blk">
+            <h4>The result</h4>
+            <p>Total distance dropped from 2,119.00 to 1,698.57 (−19.84%) and the fleet from 27 to 21 vehicles (−22.2%), in 0.42 seconds. All 100 customers are served within capacity and time windows. The acceptance rate of 35.4% sits inside the 20–40% range the literature recommends for VRPTW, a sign the cooling schedule balanced exploring and settling.</p>
+          </section>
+          <section class="blk">
+            <h4>What's next</h4>
+            <p>Fewer vehicles means less fuel and fewer drivers, which matters for a volunteer-run program. The next step is comparing against Tabu Search, genetic algorithms and ant colony optimization on the same instance, and running on real depot and recipient coordinates.</p>
+          </section>
+        </div>
+
+        <aside class="case-side">
+          <div class="car" data-car aria-roledescription="carousel" aria-label="Food rescue routing">
+            <div class="car-track" tabindex="0">
+              <figure class="slide light"><button class="zoom" type="button"><img src="assets/vrptw-sa.webp" width="1484" height="1327" alt="Simulated annealing routes, 21 vehicles" loading="lazy"></button><figcaption>After: simulated annealing, 21 vehicles, distance 1,698.57</figcaption></figure>
+              <figure class="slide light"><button class="zoom" type="button"><img src="assets/vrptw-init.webp" width="1484" height="1327" alt="Initial nearest-neighbor routes, 27 vehicles" loading="lazy"></button><figcaption>Before: nearest neighbor, 27 vehicles, distance 2,119.00</figcaption></figure>
+            </div>
+            <!--CAR-CTL-->
+          </div>
+          <dl class="kpis">
+            <div><dt>&minus;19.84%</dt><dd>total distance</dd></div>
+            <div><dt>27 &rarr; 21</dt><dd>vehicles</dd></div>
+            <div><dt>0.42 s</dt><dd>for 50,000 iterations</dd></div>
+          </dl>
+        </aside>
       </div>
-      <div class="proj-info">
-        <p class="tags"><span class="tag">[[Optimization||Optimasi]]</span><span class="tag">[[Paper · with Kevin Tan||Paper · bersama Kevin Tan]]</span></p>
-        <h3>[[Food rescue routing||Rute food rescue]]</h3>
-        <p class="one">[[Routes vehicles that collect surplus food from restaurants and supermarkets, where every stop has a time window because the food spoils.||Menyusun rute kendaraan yang mengambil makanan berlebih dari restoran dan supermarket, dengan time window di setiap titik karena makanannya cepat basi.]]</p>
-        <p class="role"><b>[[Approach||Pendekatan]]</b> [[VRPTW solved with simulated annealing (2-opt, relocate, inter-route swap) on the Solomon C101 benchmark.||VRPTW diselesaikan dengan simulated annealing (2-opt, relokasi, tukar antar rute) pada benchmark Solomon C101.]]</p>
-        <dl class="kpis">
-          <div><dt>&minus;19.84%</dt><dd>[[total distance||total jarak]]</dd></div>
-          <div><dt>27 &rarr; 21</dt><dd>[[vehicles||kendaraan]]</dd></div>
-          <div><dt>0.42 s</dt><dd>[[compute time||waktu komputasi]]</dd></div>
-        </dl>
-        <p class="stack">Python · [[metaheuristics||metaheuristik]] · Solomon benchmark</p>
-        <div class="row-btns"><a class="btn sm" href="#demo">[[Convergence curve||Kurva konvergensi]] &darr;</a></div>
+
+      <section class="did">
+        <h4>What we did</h4>
+        <ol class="steps">
+          <li><b>Mathematical model</b><span>Wrote the VRPTW formulation: objective, capacity, time-window and routing constraints.</span></li>
+          <li><b>Initial solution</b><span>Implemented a feasible nearest-neighbor construction.</span></li>
+          <li><b>Annealing design</b><span>Three neighborhood moves with a feasibility check on each.</span></li>
+          <li><b>Convergence analysis</b><span>Tracked cost and acceptance rate over the cooling schedule.</span></li>
+          <li><b>Paper</b><span>Wrote it up in IEEE format.</span></li>
+        </ol>
+      </section>
+
+      <footer class="case-foot">
+        <ul class="chips sm"><li>Python</li><li>Simulated annealing</li><li>Metaheuristics</li><li>Solomon benchmark</li></ul>
+        <a class="btn sm" href="#demo">See the convergence curve &darr;</a>
+      </footer>
+    </article>
+
+    <!-- ===== 04 Kaffa ===== -->
+    <article class="case" id="kaffa">
+      <header class="case-h">
+        <p class="case-no">04</p>
+        <div class="case-t">
+          <p class="meta">Solo · Founder &amp; developer · Product · 2026</p>
+          <h3>Kaffa: a management platform for pesantren, growing into an IoT-enabled LMS</h3>
+          <p class="tags"><span class="tag live"><i class="live-dot" aria-hidden="true"></i>Live at Pesantren Bakkatul Munawaroh</span></p>
+        </div>
+      </header>
+
+      <div class="case-body">
+        <div class="case-text">
+          <section class="blk">
+            <h4>The problem</h4>
+            <p>A pesantren runs a dense daily routine for hundreds of students: Quran memorization, congregational prayer attendance, grading, discipline. Most of it lives in WhatsApp messages and scattered spreadsheets. Parents can't follow their child's progress, and teachers type the same data in several places.</p>
+          </section>
+          <section class="blk">
+            <h4>What's built</h4>
+            <ul class="ticks">
+              <li><b>One backend, three apps</b> from one Flutter codebase: a guardian app for parents, a teacher app, and a web console for administrators.</li>
+              <li><b>Multi-tenant by design</b>, with a scope tree (programs, classes, cross-program groups) and roles assigned per scope, so access fails closed instead of leaking.</li>
+              <li><b>One activity engine</b> reused for memorization, prayer attendance and assessments, instead of one module per activity.</li>
+              <li><b>Check-in by NFC card or QR code</b>, with manual search when the hardware fails.</li>
+              <li><b>Dashboards from snapshots</b>, so leaderboards stay fast on low-end phones.</li>
+            </ul>
+          </section>
+          <section class="blk">
+            <h4>The result</h4>
+            <p>Kaffa is live at Pesantren Bakkatul Munawaroh, and a second pesantren is next. I built, deployed and maintain it on my own.</p>
+          </section>
+          <section class="blk">
+            <h4>What's next</h4>
+            <p>Going beyond CRUD. I've written the blueprint for real-time student tracking: BLE tags and gateways feeding a WebGIS, with zone-level presence, exit alerts and per-role access. Gateway placement is treated as an integer program with probabilistic coverage, and a context engine joins location with the pesantren's timetable, so staff see "at the mosque during prayer time" instead of dots on a map. A proof of concept with ten students comes first.</p>
+          </section>
+        </div>
+
+        <aside class="case-side">
+          <div class="car" data-car aria-roledescription="carousel" aria-label="Kaffa">
+            <div class="car-track" tabindex="0">
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-dashboard.webp" width="440" height="956" alt="Kaffa guardian dashboard" loading="lazy"></button><figcaption>Guardian app (demo data)</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-discovery.webp" width="440" height="956" alt="Kaffa information board" loading="lazy"></button><figcaption>Information board and events</figcaption></figure>
+              <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-arch.webp" width="1600" height="1477" alt="Kaffa system architecture" loading="lazy"></button><figcaption>System architecture</figcaption></figure>
+            </div>
+            <!--CAR-CTL-->
+          </div>
+          <dl class="kpis">
+            <div><dt>3</dt><dd>apps from one codebase</dd></div>
+            <div><dt>1 &rarr; 2</dt><dd>pesantren, the second one next</dd></div>
+            <div><dt>Solo</dt><dd>design, build and deployment</dd></div>
+          </dl>
+        </aside>
       </div>
+
+      <section class="did">
+        <h4>What I did</h4>
+        <ol class="steps">
+          <li><b>System design</b><span>Tenants, scopes, roles, and one activity model for every program.</span></li>
+          <li><b>Backend</b><span>A Python modular monolith with a relational database as the single source of truth.</span></li>
+          <li><b>Three apps</b><span>Guardian, teacher and console apps built in Flutter.</span></li>
+          <li><b>Deployment</b><span>Server setup, backups and smoke tests for the live pesantren.</span></li>
+          <li><b>IoT + WebGIS blueprint</b><span>BLE tracking, coverage optimization and the context engine.</span></li>
+        </ol>
+      </section>
+
+      <footer class="case-foot">
+        <ul class="chips sm"><li>Python</li><li>Flutter</li><li>Relational DB</li><li>VPS</li><li>BLE</li><li>WebGIS</li></ul>
+        <span class="note">Client work, so the code and product site are private.</span>
+      </footer>
     </article>
   </div>
 </section>
 
-<!-- ============ OTHER WORK ============ -->
-<section class="sec paper2" id="other">
+<!-- ============ MORE WORK ============ -->
+<section class="sec" id="other">
   <div class="in">
     <div class="sec-h">
-      <p class="kicker">03 · [[Other work||Karya lain]]</p>
-      <h2>[[Software, hardware <em>and competitions.</em>||Software, hardware, <em>dan kompetisi.</em>]]</h2>
+      <p class="kicker">03 · More work</p>
+      <h2>Software, hardware and competitions</h2>
     </div>
     <div class="grid2">
-      <!-- Kaffa -->
-      <article class="mini" id="kaffa">
-        <div class="car" data-car aria-roledescription="carousel" aria-label="Kaffa">
-          <div class="car-track" tabindex="0">
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-dashboard.webp" width="440" height="956" alt="Kaffa guardian dashboard" loading="lazy"></button><figcaption>[[Guardian app (demo data)||Aplikasi wali (data demo)]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-discovery.webp" width="440" height="956" alt="Kaffa information board" loading="lazy"></button><figcaption>[[Information board and events||Papan informasi dan acara]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/kaffa-arch.webp" width="1600" height="1477" alt="Kaffa system architecture" loading="lazy"></button><figcaption>[[System architecture||Arsitektur sistem]]</figcaption></figure>
-          </div>
-          <!--CAR-CTL-->
-        </div>
-        <p class="tags"><span class="tag live"><i class="live-dot" aria-hidden="true"></i>Live</span><span class="tag">Solo · 2026</span></p>
-        <h3>Kaffa</h3>
-        <p class="one">[[A pesantren management platform, being grown into an LMS that goes beyond CRUD: real-time student tracking over BLE on an IoT WebGIS, and spatial analytics on the data it collects. Running at Pesantren Bakkatul Munawaroh; client 2 is next.||Platform manajemen pesantren yang sedang dikembangkan menjadi LMS yang tidak berhenti di CRUD: pelacakan santri real-time lewat BLE di atas WebGIS IoT, dan analisis data spasial dari data yang terkumpul. Sudah dipakai di Pesantren Bakkatul Munawaroh; berikutnya client kedua.]]</p>
-        <p class="role"><b>[[Live now||Sudah berjalan]]</b> [[Quran memorization records, prayer attendance, grading and parent reports.||Catatan hafalan Quran, absensi sholat, penilaian, dan laporan untuk wali santri.]]</p>
-        <p class="role"><b>[[Next, already designed||Berikutnya, sudah dirancang]]</b> [[BLE tags and gateways, zone-level presence and exit alerts, per-role access, and gateway placement solved as an integer program.||BLE tag dan gateway, kehadiran per zona dan peringatan keluar area, hak akses per peran, dan letak gateway dihitung sebagai integer programming.]]</p>
-        <p class="stack">[[Built alone||Dikerjakan sendiri]] · Python · Flutter · VPS</p>
-      </article>
-
       <!-- Orchestra -->
       <article class="mini" id="orchestra">
         <div class="car" data-car aria-roledescription="carousel" aria-label="Orchestra">
           <div class="car-track" tabindex="0">
             <figure class="slide"><button class="zoom" type="button"><img src="assets/orch-dashboard.webp" width="1500" height="936" alt="Orchestra dashboard" loading="lazy"></button><figcaption>Dashboard</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/orch-workspace.webp" width="1500" height="938" alt="Orchestra project workspace" loading="lazy"></button><figcaption>[[Project workspace||Workspace proyek]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/orch-chat.webp" width="1500" height="938" alt="Orchestra team chat" loading="lazy"></button><figcaption>[[Team chat||Chat tim]]</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/orch-workspace.webp" width="1500" height="938" alt="Orchestra project workspace" loading="lazy"></button><figcaption>Project workspace</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/orch-chat.webp" width="1500" height="938" alt="Orchestra team chat" loading="lazy"></button><figcaption>Team chat</figcaption></figure>
           </div>
           <!--CAR-CTL-->
         </div>
-        <p class="tags"><span class="tag">[[Group · backend &amp; architect||Kelompok · backend &amp; architect]]</span><span class="tag">2026</span></p>
+        <p class="meta">Group · Backend &amp; architecture · 2026</p>
         <h3>Orchestra</h3>
-        <p class="one">[[Slack, ClickUp and the like each add one more place to check. Orchestra doesn't replace the tools a software team already uses; it ties Notion tasks, GitHub activity and Zoom meetings into one workspace with team chat, so status doesn't have to be re-typed between them.||Slack, ClickUp, dan sejenisnya masing-masing menambah satu tempat lagi yang harus dicek. Orchestra tidak menggantikan tool yang sudah dipakai tim software, tapi menyatukan task Notion, aktivitas GitHub, dan meeting Zoom dalam satu workspace beserta chat tim, jadi status tidak perlu ditulis ulang di tiap tempat.]]</p>
-        <p class="role"><b>[[My part||Peran saya]]</b> [[Backend and architecture: webhook integrations, encrypted chat, passkey login.||Backend dan arsitektur: integrasi webhook, chat terenkripsi, login passkey.]]</p>
-        <p class="stack">NestJS · PostgreSQL · Socket.IO · WebAuthn · <a href="https://github.com/Dimms-TheMathGuy/orchestra_app" target="_blank" rel="noopener">GitHub &#8599;</a> · <a href="https://drive.google.com/file/d/1g4yMBNqU13kjFzOOQTVC6QxC3fV2WQOW/view?usp=sharing" target="_blank" rel="noopener">Demo &#8599;</a></p>
+        <p>Slack, ClickUp and the like each add one more place to check. Orchestra doesn't replace the tools a software team already uses; it ties Notion tasks, GitHub activity and Zoom meetings into one workspace with team chat, so status doesn't have to be re-typed between them.</p>
+        <p class="role"><b>My part</b> Webhook integrations, encrypted chat, passkey login.</p>
+        <p class="stack">NestJS · PostgreSQL · Socket.IO · WebAuthn · <a href="https://github.com/Dimms-TheMathGuy/orchestra_app" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a> · <a href="https://drive.google.com/file/d/1g4yMBNqU13kjFzOOQTVC6QxC3fV2WQOW/view?usp=sharing" target="_blank" rel="noopener">Demo&nbsp;&#8599;</a></p>
       </article>
 
       <!-- Smart Flood -->
       <article class="mini" id="flood">
         <div class="car" data-car aria-roledescription="carousel" aria-label="Smart Flood Irrigator">
           <div class="car-track" tabindex="0">
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/flood-device.webp" width="668" height="904" alt="Smart Flood Irrigator device" loading="lazy"></button><figcaption>[[The device||Perangkatnya]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/flood-app.webp" width="600" height="1300" alt="Smart Flood Irrigator app" loading="lazy"></button><figcaption>[[The app||Aplikasinya]]</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/flood-device.webp" width="668" height="904" alt="Smart Flood Irrigator device" loading="lazy"></button><figcaption>The device</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/flood-app.webp" width="600" height="1300" alt="Smart Flood Irrigator app" loading="lazy"></button><figcaption>The app</figcaption></figure>
           </div>
           <!--CAR-CTL-->
         </div>
-        <p class="tags"><span class="tag">IoT</span><span class="tag">[[Group · device lead||Kelompok · lead perangkat]]</span><span class="tag">2025</span></p>
+        <p class="meta">Group · Device lead · IoT · 2025</p>
         <h3>Smart Flood Irrigator</h3>
-        <p class="one">[[An ESP32 device that reads water levels in two reservoirs and moves water to ease flooding, with a live app. I built the device and firmware and co-wrote the paper.||Perangkat ESP32 yang membaca tinggi air di dua reservoir dan memindahkan air untuk mengurangi banjir, lengkap dengan aplikasi real-time. Saya membuat perangkat dan firmware-nya serta ikut menulis paper-nya.]]</p>
-        <p class="stack">ESP32 · Arduino · Flutter · Firebase · <a href="https://github.com/Dimms-TheMathGuy/IoT_Project_Smart_Flood_Irrigation_System" target="_blank" rel="noopener">GitHub &#8599;</a> · <a href="https://drive.google.com/file/d/1zeVeyN39cbd6I_6SNn1-wLbvNxLLwAcc/view?usp=sharing" target="_blank" rel="noopener">Paper &#8599;</a></p>
+        <p>An ESP32 device that reads water levels in two reservoirs and moves water to ease flooding, with a live app. I built the device and firmware and co-wrote the paper.</p>
+        <p class="stack">ESP32 · Arduino · Flutter · Firebase · <a href="https://github.com/Dimms-TheMathGuy/IoT_Project_Smart_Flood_Irrigation_System" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a> · <a href="https://drive.google.com/file/d/1zeVeyN39cbd6I_6SNn1-wLbvNxLLwAcc/view?usp=sharing" target="_blank" rel="noopener">Paper&nbsp;&#8599;</a></p>
       </article>
 
       <!-- RAMEIN -->
       <article class="mini" id="ramein">
         <div class="car" data-car aria-roledescription="carousel" aria-label="RAMEIN">
           <div class="car-track" tabindex="0">
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-home.webp" width="1600" height="900" alt="RAMEIN home page design" loading="lazy"></button><figcaption>[[Home page||Halaman beranda]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-map.webp" width="1600" height="900" alt="RAMEIN map page design" loading="lazy"></button><figcaption>[[Map of vendors and events||Peta PKL dan acara]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-info.webp" width="1600" height="900" alt="RAMEIN information and notification pages" loading="lazy"></button><figcaption>[[Events and notifications||Acara dan notifikasi]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-start.webp" width="1600" height="900" alt="RAMEIN opening and login screens" loading="lazy"></button><figcaption>[[Opening and login||Pembuka dan login]]</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-home.webp" width="1600" height="900" alt="RAMEIN home page design" loading="lazy"></button><figcaption>Home page</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-map.webp" width="1600" height="900" alt="RAMEIN map page design" loading="lazy"></button><figcaption>Map of vendors and events</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-info.webp" width="1600" height="900" alt="RAMEIN information and notification pages" loading="lazy"></button><figcaption>Events and notifications</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/ramein-start.webp" width="1600" height="900" alt="RAMEIN opening and login screens" loading="lazy"></button><figcaption>Opening and login</figcaption></figure>
           </div>
           <!--CAR-CTL-->
         </div>
-        <p class="tags"><span class="tag win">[[Semifinalist · Gemastik XVIII||Semifinalis · Gemastik XVIII]]</span><span class="tag">[[Team lead||Ketua tim]]</span></p>
+        <p class="meta">Team lead · Smart city · 2025</p>
         <h3>RAMEIN</h3>
-        <p class="one">[[A smart-city app that maps official street-vendor spots, local services like tailors and welders, and safe public spaces with their events. Semifinalist in the Smart City division.||Aplikasi smart city yang memetakan lokasi resmi PKL, jasa mikro seperti penjahit dan tukang las, serta ruang publik yang aman beserta acaranya. Semifinalis divisi Smart City.]]</p>
-        <p class="stack">[[Product design · spatial mapping||Desain produk · pemetaan spasial]] · <a href="https://binusianorg-my.sharepoint.com/personal/mohammad_afradika_binus_ac_id/_layouts/15/guestaccess.aspx?share=IQBFDvMpGVJBS6CmFHJRtV2GAfgiXlgFnf4sTMQt4L3o7Vw&amp;e=wjHDHQ" target="_blank" rel="noopener">[[Proposal video||Video proposal]] &#8599;</a></p>
+        <p class="tags"><span class="tag win">Semifinalist · Gemastik XVIII</span></p>
+        <p>A smart-city app that maps official street-vendor spots, local services like tailors and welders, and safe public spaces with their events. Semifinalist in the Smart City division.</p>
+        <p class="stack">Product design · spatial mapping · <a href="https://binusianorg-my.sharepoint.com/personal/mohammad_afradika_binus_ac_id/_layouts/15/guestaccess.aspx?share=IQBFDvMpGVJBS6CmFHJRtV2GAfgiXlgFnf4sTMQt4L3o7Vw&amp;e=wjHDHQ" target="_blank" rel="noopener">Proposal video&nbsp;&#8599;</a></p>
       </article>
 
       <!-- Want To Sell -->
       <article class="mini" id="wts">
         <div class="car" data-car aria-roledescription="carousel" aria-label="Want To Sell">
           <div class="car-track" tabindex="0">
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/wts-home.webp" width="1400" height="996" alt="Want To Sell home page" loading="lazy"></button><figcaption>[[Home page||Halaman beranda]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/wts-product.webp" width="1400" height="909" alt="Want To Sell product page with pollution impact" loading="lazy"></button><figcaption>[[Product page with its µg/m³ impact||Halaman produk dengan dampak µg/m³]]</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/wts-home.webp" width="1400" height="996" alt="Want To Sell home page" loading="lazy"></button><figcaption>Home page</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/wts-product.webp" width="1400" height="909" alt="Want To Sell product page with pollution impact" loading="lazy"></button><figcaption>Product page with its µg/m³ impact</figcaption></figure>
           </div>
           <!--CAR-CTL-->
         </div>
-        <p class="tags"><span class="tag win">Best Project</span><span class="tag">[[Group · full-stack||Kelompok · full-stack]]</span><span class="tag">2025</span></p>
+        <p class="meta">Group · Full-stack · 2025</p>
         <h3>Want To Sell</h3>
-        <p class="one">[[A preloved marketplace that shows how much air pollution each purchase helped avoid, in µg/m³. Chosen as the best project in class.||Marketplace barang preloved yang menampilkan berapa banyak polusi udara yang berhasil dikurangi dari setiap pembelian, dalam µg/m³. Terpilih sebagai proyek terbaik di kelas.]]</p>
-        <p class="stack">Laravel · MySQL · Tailwind · <a href="https://github.com/Nieyniey/WantToSell" target="_blank" rel="noopener">GitHub &#8599;</a> · <a href="https://1drv.ms/v/c/0b37d36316e1fe3c/IQBBwsmIVTZNQ6pFryx7nXFEASItsmkWLZNU-06P_ejLhrY?e=WTg3BD" target="_blank" rel="noopener">Demo &#8599;</a></p>
+        <p class="tags"><span class="tag win">Best Project</span></p>
+        <p>A preloved marketplace that shows how much air pollution each purchase helped avoid, in µg/m³. Chosen as the best project in class.</p>
+        <p class="stack">Laravel · MySQL · Tailwind · <a href="https://github.com/Nieyniey/WantToSell" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a> · <a href="https://1drv.ms/v/c/0b37d36316e1fe3c/IQBBwsmIVTZNQ6pFryx7nXFEASItsmkWLZNU-06P_ejLhrY?e=WTg3BD" target="_blank" rel="noopener">Demo&nbsp;&#8599;</a></p>
       </article>
 
       <!-- Honkai -->
       <article class="mini" id="honkai">
         <div class="car" data-car aria-roledescription="carousel" aria-label="Honkai Moon Lite">
           <div class="car-track" tabindex="0">
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/honkai-world.webp" width="1600" height="930" alt="Honkai Moon Lite world view" loading="lazy"></button><figcaption>[[Scrolling world||Dunia yang bergulir]]</figcaption></figure>
-            <figure class="slide"><button class="zoom" type="button"><img src="assets/honkai-fight.webp" width="1300" height="1248" alt="Honkai Moon Lite fight scene" loading="lazy"></button><figcaption>[[Fight scene||Adegan bertarung]]</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/honkai-world.webp" width="1600" height="930" alt="Honkai Moon Lite world view" loading="lazy"></button><figcaption>The map moves, the player stays centered</figcaption></figure>
+            <figure class="slide"><button class="zoom" type="button"><img src="assets/honkai-fight.webp" width="1300" height="1248" alt="Honkai Moon Lite fight scene" loading="lazy"></button><figcaption>Fight scene</figcaption></figure>
           </div>
           <!--CAR-CTL-->
         </div>
-        <p class="tags"><span class="tag">[[Game · C++||Game · C++]]</span><span class="tag">[[Solo · since 2024||Solo · sejak 2024]]</span></p>
+        <p class="meta">Solo · Game · since 2024</p>
         <h3>Honkai Moon Lite</h3>
-        <p class="one">[[A terminal RPG in C++ with only the standard library. The player is always drawn at the centre of a small window onto a 150×150 world, so it is the map that moves, not the character. The world is procedurally generated, and enemies chase using Manhattan-distance pathfinding.||RPG terminal dengan C++ tanpa library tambahan. Pemain selalu digambar di tengah jendela kecil dari dunia 150×150, jadi yang bergerak adalah petanya, bukan karakternya. Dunianya dibuat secara prosedural, dan musuh mengejar dengan pathfinding berbasis jarak Manhattan.]]</p>
-        <p class="stack">C++ · <a href="https://github.com/Dimms-TheMathGuy/honkai-moon-lite" target="_blank" rel="noopener">GitHub &#8599;</a></p>
+        <p>A terminal RPG in C++ with only the standard library. The player is always drawn at the centre of a small window onto a 150×150 world, so it is the map that moves, not the character. The world is procedurally generated, and enemies chase using Manhattan-distance pathfinding.</p>
+        <p class="stack">C++ · <a href="https://github.com/Dimms-TheMathGuy/honkai-moon-lite" target="_blank" rel="noopener">GitHub&nbsp;&#8599;</a></p>
       </article>
-    </div>
 
-    <div class="rows also">
-      <div class="r"><span class="r-k">GIS · [[course||kuliah]]</span><span class="r-d"><b>Japan AQI Heatmap.</b> [[A Flask service that pulls live air-quality readings for Japan from the WAQI API and shows them as a Leaflet heatmap. Geo-Informatics course.||Layanan Flask yang mengambil data kualitas udara Jepang secara langsung dari API WAQI dan menampilkannya sebagai heatmap Leaflet. Mata kuliah Geo-Informatics.]]</span><span class="r-v">2025</span></div>
-      <div class="r"><span class="r-k">[[Paper||Paper]]</span><span class="r-d"><b>[[Quarter-car suspension model.||Model suspensi quarter-car.]]</b> [[State-space model, modal decomposition and RK 4(5) simulation of a car suspension over a speed bump. Differential Equations, group of 5.||Model state-space, dekomposisi modal, dan simulasi RK 4(5) suspensi mobil saat melewati polisi tidur. Persamaan Diferensial, kelompok 5 orang.]] <a href="#demo">[[See it drawn||Lihat grafiknya]] &darr;</a></span><span class="r-v">2025</span></div>
+      <!-- small items -->
+      <div class="mini mini-list">
+        <p class="meta">Also</p>
+        <div class="li">
+          <h3>Japan AQI Heatmap</h3>
+          <p>A Flask service that pulls live air-quality readings for Japan from the WAQI API and shows them as a Leaflet heatmap. Geo-Informatics course, 2025.</p>
+        </div>
+        <div class="li">
+          <h3>Quarter-car suspension model</h3>
+          <p>State-space model, modal decomposition and RK 4(5) simulation of a car suspension over a speed bump. Differential Equations paper, group of 5, 2025. <a href="#demo">See it drawn&nbsp;&darr;</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ DEMO ============ -->
-<section class="sec paper" id="demo">
+<section class="sec tint" id="demo">
   <div class="in">
     <div class="demo-h">
       <div>
-        <p class="kicker">04 · [[Try it||Coba]]</p>
-        <h2>[[The math behind the results, <em>drawn live.</em>||Matematika di balik hasilnya, <em>digambar langsung.</em>]]</h2>
+        <p class="kicker">04 · Try it</p>
+        <h2>The math behind the results, drawn live</h2>
       </div>
       <div class="variants" role="group" aria-label="Choose a model">
         <button type="button" data-v="anneal" aria-pressed="true">Annealing</button>
         <button type="button" data-v="iso" aria-pressed="false">Isochrone</button>
-        <button type="button" data-v="susp" aria-pressed="false">[[Suspension||Suspensi]]</button>
+        <button type="button" data-v="susp" aria-pressed="false">Suspension</button>
       </div>
     </div>
     <div class="panel">
@@ -330,62 +540,69 @@
         <g id="plot-grid"></g><g id="plot-back"></g><path id="plot-main" d=""/><g id="plot-front"></g>
       </svg>
       <dl class="facts" data-for="anneal">
-        <div><dt>[[Route distance||Jarak rute]]</dt><dd>2119.00 &rarr; 1698.57</dd></div>
-        <div><dt>[[Vehicles||Kendaraan]]</dt><dd>27 &rarr; 21</dd></div>
-        <div><dt>[[Compute||Komputasi]]</dt><dd>0.42 s</dd></div>
+        <div><dt>Route distance</dt><dd>2119.00 &rarr; 1698.57</dd></div>
+        <div><dt>Vehicles</dt><dd>27 &rarr; 21</dd></div>
+        <div><dt>Compute</dt><dd>0.42 s</dd></div>
       </dl>
       <dl class="facts" data-for="iso" hidden>
-        <div><dt>[[Circle, 833 m||Lingkaran, 833 m]]</dt><dd>2.18 km&sup2;</dd></div>
-        <div><dt>[[10-min walk||Jalan kaki 10 menit]]</dt><dd>0.92 km&sup2;</dd></div>
-        <div><dt>[[Walkable share||Porsi terjangkau]]</dt><dd>42%</dd></div>
+        <div><dt>Circle, 833 m</dt><dd>2.18 km&sup2;</dd></div>
+        <div><dt>10-min walk</dt><dd>0.92 km&sup2;</dd></div>
+        <div><dt>Walkable share</dt><dd>42%</dd></div>
       </dl>
       <dl class="facts" data-for="susp" hidden>
-        <div><dt>State</dt><dd>[[4 variables||4 variabel]]</dd></div>
-        <div><dt>Solver</dt><dd>RK 4(5) [[adaptive||adaptif]]</dd></div>
-        <div><dt>[[Free response||Respons bebas]]</dt><dd>Re&thinsp;&lambda; &lt; 0</dd></div>
+        <div><dt>State</dt><dd>4 variables</dd></div>
+        <div><dt>Solver</dt><dd>RK 4(5) adaptive</dd></div>
+        <div><dt>Free response</dt><dd>Re&thinsp;&lambda; &lt; 0</dd></div>
       </dl>
-      <p class="fine" data-for="anneal">[[Food rescue routing. Curve traced from the run's convergence plot; start and end values are exact.||Rute food rescue. Kurva dijiplak dari plot konvergensi; nilai awal dan akhir persis.]]</p>
-      <p class="fine" data-for="iso" hidden>[[StaSIUN, Sudirman station. The outline is a sketch of the measured isochrone; the areas are measured.||StaSIUN, stasiun Sudirman. Garis bentuknya sketsa dari isochrone terukur; luasnya hasil pengukuran.]]</p>
-      <p class="fine" data-for="susp" hidden>[[Differential Equations paper (group of 5): a quarter-car suspension after a speed bump, simulated in your browser with illustrative parameters.||Paper Persamaan Diferensial (kelompok 5 orang): suspensi quarter-car setelah melewati polisi tidur, disimulasikan di browser dengan parameter ilustratif.]]</p>
+      <p class="fine" data-for="anneal">Food rescue routing. Curve traced from the run's convergence plot; start and end values are exact.</p>
+      <p class="fine" data-for="iso" hidden>StaSIUN, Sudirman station. The outline is a sketch of the measured isochrone; the areas are measured.</p>
+      <p class="fine" data-for="susp" hidden>Differential Equations paper (group of 5): a quarter-car suspension after a speed bump, simulated in your browser with illustrative parameters.</p>
     </div>
   </div>
 </section>
 
 <!-- ============ NOW ============ -->
-<section class="sec paper2" id="now">
-  <div class="in two">
-    <div class="two-l">
-      <p class="kicker">05 · [[Now||Saat ini]]</p>
-      <h2>[[What I'm <em>working on.</em>||Yang sedang <em>saya kerjakan.</em>]]</h2>
+<section class="sec" id="now">
+  <div class="in">
+    <div class="sec-h">
+      <p class="kicker">05 · Now</p>
+      <h2>What I'm working on</h2>
     </div>
-    <div class="rows">
-      <div class="r tall"><span class="r-k">Computer vision · [[in progress||berjalan]]</span><span class="r-d"><b>[[Plane-aware three-view structure from motion.||Structure from motion tiga pandangan yang memperhitungkan bidang.]]</b> [[How accurately three photos recover planar structure, with an error model in centimetres. Course project and paper.||Seberapa akurat tiga foto merekonstruksi struktur bidang, dengan model galat dalam sentimeter. Proyek mata kuliah sekaligus paper.]]<span class="tex now-eq" data-tex="\min\sum\lVert x-\pi(PX)\rVert^2"></span></span></div>
-      <div class="r tall"><span class="r-k">[[Transport data · in progress||Data transportasi · berjalan]]</span><span class="r-d"><b>[[Ride-hailing and TransJakarta: feeder or competitor?||Ojek online dan TransJakarta: pengumpan atau pesaing?]]</b> [[With two lecturers. Rebuilding a stop-to-stop origin-destination matrix from tap data with maximum entropy, then adding GIS accessibility.||Bersama dua dosen. Menyusun ulang matriks asal-tujuan antar halte dari data tap dengan maximum entropy, lalu menambahkan analisis aksesibilitas GIS.]]<span class="tex now-eq" data-tex="\max -\sum T_{ij}\ln T_{ij}"></span></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="sec paper" id="about">
-  <div class="in about">
-    <figure class="portrait"><img src="assets/dimas-1.webp" width="900" height="1200" alt="Mohammad Dimas Afradika" loading="lazy"></figure>
-    <div class="about-r">
-      <p class="kicker">06 · [[About||Tentang saya]]</p>
-      <h2>Mohammad Dimas <em>Afradika.</em></h2>
-      <p class="lede">[[Computer Science and Mathematics at BINUS University, GPA 3.66 / 4.00. I prefer understanding a few models deeply over using many I can't explain.||Computer Science dan Mathematics di BINUS University, IPK 3,66 / 4,00. Saya lebih memilih memahami sedikit model secara mendalam daripada memakai banyak model yang tidak bisa saya jelaskan.]]</p>
-      <div class="rows compact">
-        <div class="r"><span class="r-k">Tools</span><span class="r-d">Python, PyTorch, Hugging Face, scikit-learn, pandas, PostGIS, SQL, FastAPI, Docker</span></div>
-        <div class="r"><span class="r-k">[[Math||Matematika]]</span><span class="r-d">[[Numerical analysis, real analysis, mathematical statistics, operation research, linear algebra, projective geometry||Analisis numerik, analisis real, statistika matematika, riset operasi, aljabar linear, geometri proyektif]]</span></div>
-        <div class="r"><span class="r-k">[[Recognition||Pencapaian]]</span><span class="r-d">[[Favorite Winner, MAPID WebGIS 2026 · Semifinalist, Gemastik XVIII 2025 · Best Project in class 2025 · papers on food rescue routing, quarter-car suspension and IoT flood irrigation||Favorite Winner MAPID WebGIS 2026 · Semifinalis Gemastik XVIII 2025 · Best Project di kelas 2025 · paper tentang rute food rescue, suspensi quarter-car, dan irigasi banjir IoT]]</span></div>
-        <div class="r"><span class="r-k">[[Beyond projects||Di luar proyek]]</span><span class="r-d">[[Mentor and tutor for other students on campus; active in student organizations. Details on||Mentor dan tutor untuk mahasiswa lain di kampus; aktif di organisasi mahasiswa. Detailnya di]] <a href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn &#8599;</a></span></div>
-        <div class="r"><span class="r-k">[[Contact||Kontak]]</span><span class="r-d"><span class="mail">alhafidzdimas@gmail.com</span> · <a href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">LinkedIn &#8599;</a> · <a href="https://github.com/Dimms-TheMathGuy" target="_blank" rel="noopener">GitHub &#8599;</a> · Jakarta</span></div>
-        <div class="r"><span class="r-k">[[Languages||Bahasa]]</span><span class="r-d">[[Indonesian (native), English (professional working)||Indonesia (native), Inggris (profesional)]]</span></div>
-      </div>
+    <div class="now-grid">
+      <article class="now">
+        <p class="meta">Computer vision · self-initiated paper · in progress</p>
+        <h3>Plane-Aware Three-View Structure from Motion</h3>
+        <p>How accurately three photos recover planar structure, with an error model in cm rather than only reprojection error in pixels, which says little about real-world size. A self-initiated paper, started before my computer vision course.</p>
+        <div class="now-eq"><span class="tex" data-tex="\min\sum\lVert x-\pi(PX)\rVert^2"></span></div>
+      </article>
+      <article class="now">
+        <p class="meta">Transport data · research · in progress</p>
+        <h3>Ride-hailing and TransJakarta: feeder or rival?</h3>
+        <p>With two lecturers. Rebuilding a stop-to-stop Origin-Destination matrix from tap data with maximum entropy, then adding GIS accessibility.</p>
+        <div class="now-eq"><span class="tex" data-tex="\max -\sum T_{ij}\ln T_{ij}"></span></div>
+      </article>
     </div>
   </div>
 </section>
 
-<footer class="foot-min"><div class="in"><span>&copy; 2026 Mohammad Dimas Afradika</span><span>alhafidzdimas@gmail.com</span></div></footer>
+<!-- ============ CONTACT ============ -->
+<section class="sec tint" id="contact">
+  <div class="in contact-grid">
+    <div class="contact-l">
+      <p class="kicker">06 · Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <ul class="contact-list">
+      <li><span>Campus email</span><a href="mailto:mohammad.afradika@binus.ac.id">mohammad.afradika@binus.ac.id</a></li>
+      <li><span>Personal email</span><a href="mailto:alhafidzdimas@gmail.com">alhafidzdimas@gmail.com</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mohammad-dimas-afradika" target="_blank" rel="noopener">mohammad-dimas-afradika&nbsp;&#8599;</a></li>
+      <li><span>GitHub</span><a href="https://github.com/Dimms-TheMathGuy" target="_blank" rel="noopener">Dimms-TheMathGuy&nbsp;&#8599;</a></li>
+      <li><span>Location</span><b>Jakarta, Indonesia</b></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot-min"><div class="in"><span>&copy; 2026 Mohammad Dimas Afradika</span><span>mohammad.afradika@binus.ac.id</span></div></footer>
 </main>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
